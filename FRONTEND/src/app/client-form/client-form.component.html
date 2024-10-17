@@ -1,0 +1,62 @@
+<form (ngSubmit)="onSubmit()" class="container mt-4">
+    <div class="mb-3">
+      <label for="civilite" class="form-label">Civilité:</label>
+      <select [(ngModel)]="client.civilite" name="civilite" required class="form-select">
+        <option value="Monsieur">Monsieur</option>
+        <option value="Madame">Madame</option>
+      </select>
+    </div>
+  
+    <div class="mb-3">
+      <label for="nom" class="form-label">Nom:</label>
+      <input type="text" [(ngModel)]="client.nom" name="nom" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="prenom" class="form-label">Prénom:</label>
+      <input type="text" [(ngModel)]="client.prenom" name="prenom" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="adresse" class="form-label">Adresse:</label>
+      <input type="text" [(ngModel)]="client.adresse" name="adresse" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="cp" class="form-label">Code Postal:</label>
+      <input type="text" [(ngModel)]="client.cp" name="cp" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="ville" class="form-label">Ville:</label>
+      <input type="text" [(ngModel)]="client.ville" name="ville" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="tel" class="form-label">Téléphone:</label>
+      <input type="tel" [(ngModel)]="client.tel" name="tel" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" [(ngModel)]="client.email" name="email" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="login" class="form-label">Login:</label>
+      <input type="text" [(ngModel)]="client.login" name="login" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="password" class="form-label">Mot de passe:</label>
+      <input type="password" [(ngModel)]="client.password" name="password" required class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="pays" class="form-label">Pays:</label>
+      <input type="text" [(ngModel)]="client.pays" name="pays" required class="form-control">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+  
